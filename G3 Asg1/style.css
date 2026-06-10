@@ -1,0 +1,80 @@
+/* Overall Page Layout */
+body {
+    background-color: #f4f6f8; /* Light background color  */
+    font-family: Arial, Helvetica, sans-serif; /* Sans-serif font family  */
+    color: #333333; /* Dark gray text [cite: 71] */
+    margin: 40px auto; /* Adequate page margins [cite: 64] */
+    line-height: 1.6;
+}
+
+/* Heading (Title Section) */
+h1 {
+    text-align: center; /* Center aligned [cite: 70] */
+    font-size: 2.2em; /* Increased font size [cite: 72] */
+    font-weight: bold; /* Bold weight [cite: 72] */
+    color: #2c3e50; 
+    margin-bottom: 30px; /* Spacing below the heading [cite: 73] */
+}
+
+/* Form Container */
+form {
+    background-color: #ffffff; /* White background [cite: 84] */
+    width: 60%; /* Moderate width around 60% of viewport [cite: 88] */
+    margin: 0 auto; /* Centered horizontally  */
+    padding: 30px; /* Internal padding [cite: 86] */
+    border-radius: 8px; /* Rounded corners [cite: 85] */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect [cite: 87] */
+}
+
+/* Section Grouping */
+fieldset {
+    border: 1px solid #dcdcdc; /* Thin, light-colored borders [cite: 91] */
+    padding: 20px; /* Consistent padding [cite: 92] */
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold; /* Bold text [cite: 93] */
+    color: #0056b3; /* Distinct color tone [cite: 93] */
+    padding: 0 10px;
+}
+
+/* Form Inputs and Controls */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%; /* Uniform in width [cite: 95] */
+    padding: 10px; /* Vertical and horizontal padding [cite: 97] */
+    margin-bottom: 15px; /* Vertical spacing between consecutive input elements [cite: 98] */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle; /* Properly aligned with their labels [cite: 99] */
+}
+
+/* Submit Button */
+button {
+    background-color: #28a745; /* Distinctive shade of green [cite: 102] */
+    color: #ffffff; /* White text [cite: 103] */
+    font-weight: bold; /* Bold text [cite: 103] */
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px; /* Slightly rounded [cite: 104] */
+    cursor: pointer; /* Cursor changes to a pointer icon [cite: 107] */
+    display: block;
+    margin: 20px auto 0; /* Centrally aligned [cite: 108] */
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #218838; /* Background color change to indicate it's clickable [cite: 105, 106] */
+}
