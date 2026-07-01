@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>User Survey Form</h1>
+    <form action="SurveyServlet" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Full Name: <input type="text" name="fullName" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Phone: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label><br>
+            <label>Age: <input type="number" name="age" min="1"></label><br>
+            <label>Gender: 
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education & Employment</legend>
+            <label>Highest Qualification: 
+                <select name="qualification">
+                    <option value="High School">High School</option>
+                    <option value="Bachelor's" selected>Bachelor's</option>
+                    <option value="Master's">Master's</option>
+                    <option value="PhD">PhD</option>
+                </select>
+            </label><br>
+            <label>Employment Status: 
+                <input type="radio" name="employment" value="Student"> Student
+                <input type="radio" name="employment" value="Employed"> Employed
+                <input type="radio" name="employment" value="Unemployed"> Unemployed
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Technical Skills</legend>
+            <label>Skills:
+                <input type="checkbox" name="skills" value="Java"> Java
+                <input type="checkbox" name="skills" value="Python"> Python
+                <input type="checkbox" name="skills" value="HTML/CSS"> HTML/CSS
+                <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+            </label><br>
+            <label>Rate your coding proficiency: <input type="range" name="proficiency" min="1" max="10"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Upload Documents</legend>
+            <label>Upload Resume: <input type="file" name="resume"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+            <label>Any Comments:<br><textarea name="comments" rows="4"></textarea></label>
+        </fieldset>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html>
